@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8080/web_ci_ktx';
+$config['base_url'] = 'http://localhost/CDTN_07_2020/web_ci_ktx';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost:8080/web_ci_ktx';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'home.php';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -113,6 +113,7 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/core_classes.html
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
+$config['subclass_prefix'] = 'Binh_';// file .php  trong core co tên là Binh_...
 */
 $config['subclass_prefix'] = 'MY_';
 
