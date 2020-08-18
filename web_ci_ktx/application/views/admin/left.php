@@ -75,13 +75,13 @@
 			</li>
 			<li class="has-sub">
 				<a class="js-arrow" href="#">
-					<i class="fas fa-table"></i>khu/tầng</a>
+					<i class="fas fa-table"></i>Bài viết</a>
 				<ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
 					<li>
-						<a href="#">Thêm khu/tầng</a>
+						<a href="#">Thêm Bài viết</a>
 					</li>
 					<li>
-						<a href="#">Danh sách khu/tầng</a>
+						<a href="#">Danh sách Bài viết</a>
 					</li>
 				</ul>
 			</li>

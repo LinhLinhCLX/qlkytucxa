@@ -8,6 +8,7 @@ Class Students extends MY_Controller
     }
     function index()
     {
+        
 
         //lay nội dung của biến message
         $message = $this->session->flashdata('message');
