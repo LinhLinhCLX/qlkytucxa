@@ -1,0 +1,53 @@
+body{
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+#navbarTogglerDemo02 ul li a {
+	font-family:  Helvetica, Arial;
+	font-size: 14px;
+    font-weight: bold;
+    color: #1e2d85;
+
+}
+#navbarTogglerDemo02 ul li a:hover {
+    color: crimson;
+}
+
+#navbarTogglerDemo02 ul li {
+    text-align: center;
+}
+/*footer*/
+
+footer{
+    background-color: #4F5155;
+    color: #BBBBC0;
+}
+/*.info-footer{
+    padding-left: 100px;
+}*/
+a{
+    color: #BBBBC0;
+}
+a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+.copyright ,.info-footer{
+    margin-top :10px;
+}
+.copyright{
+    background: #2f2f2f;
+    text-align: center;
+}
+
+.line-footer{
+    background-color: #6c757d;
+}
+
+/*response*/
+@media (max-width: 576px) {
+    .navbar-brand img{
+        width: 180px;
+        height: 50px;
+    }
+}
+

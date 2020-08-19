@@ -3,33 +3,34 @@ Class MY_Controller extends CI_Controller
 {
     //bien gui du lieu sang ben view
     public $data = array();
-
+    
     function __construct()
     {
         //ke thua tu CI_Controller
         parent::__construct();
-
+        
         $controller = $this->uri->segment(1);
         switch ($controller)
         {
             case 'admin' :
                 {
-                    //xu ly cac du lieu khi truy cap vao trang admin
                     $this->load->helper('admin');
                     $this->_check_login();
                     break;
                 }
             default:
                 {
+                    $input = array();
+                    $input['where'] = array('parent_id' => 0);
 
-                    //goi toi thu vien
-                    $this->load->library('cart');
-                    $this->data['total_items']  = $this->cart->total_items();
+                    $input = array();
+                    $input['limit'] = array(5, 0);
+                  
                 }
-
+            
         }
     }
-
+    
     /*
      * Kiem tra trang thai dang nhap cua admin
      */
@@ -37,7 +38,7 @@ Class MY_Controller extends CI_Controller
     {
         $controller = $this->uri->rsegment('1');
         $controller = strtolower($controller);
-
+    
         $login = $this->session->userdata('login');
         //neu ma chua dang nhap,ma truy cap 1 controller khac login
         if(!$login && $controller != 'login')
