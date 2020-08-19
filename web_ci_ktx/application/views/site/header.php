@@ -10,16 +10,16 @@
 
 			<ul class="navbar-nav ml-auto mr-md-5 ">
 				<li class="nav-item">
-					<a class="nav-link active" href="#">TRANG CHỦ</a>
+					<a class="nav-link active" href="<?php echo base_url('home'); ?>">TRANG CHỦ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">GIỚI THIỆU</a>
+					<a class="nav-link" href="<?php echo base_url('product'); ?>">GIỚI THIỆU</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">THÔNG BÁO</a>
+					<a class="nav-link" href="<?php echo base_url('user'); ?>">ĐĂNG KÝ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">TRA CỨU ĐIỆN NƯỚC</a>
+					<a class="nav-link" href="<?php echo base_url('order'); ?>">TRA CỨU ĐIỆN NƯỚC</a>
 				</li>
 			</ul>
 		</div>

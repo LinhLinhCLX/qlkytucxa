@@ -4,7 +4,7 @@ Class Admin extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('admin_model');
+        $this->load->model('canbo_model');
     }
     
     /*
@@ -13,10 +13,10 @@ Class Admin extends MY_Controller
     function index()
     {
         $input = array();
-        $list = $this->admin_model->get_list($input);
+        $list = $this->canbo_model->get_list($input);
         $this->data['list'] = $list;
     
-        $total = $this->admin_model->get_total();
+        $total = $this->canbo_model->get_total();
         $this->data['total'] = $total;
         
         //lay nội dung của biến message
@@ -35,7 +35,7 @@ Class Admin extends MY_Controller
         $username = $this->input->post('username');
         $where = array('username' => $username);
         //kiêm tra xem username đã tồn tại chưa
-        if($this->admin_model->check_exists($where))
+        if($this->canbo_model->check_exists($where))
         {
             //trả về thông báo lỗi
             $this->form_validation->set_message(__FUNCTION__, 'Tài khoản đã tồn tại');

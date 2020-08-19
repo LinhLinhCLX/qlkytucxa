@@ -26,10 +26,10 @@ Class Login extends MY_controller{
         $matkhau = $this->input->post('matkhau');
         $matkhau = md5($matkhau);
 
-        $this->load->model('admin_model');
-        $where = array('email' => $email, 'matkhau' => $matkhau);
+        $this->load->model('canbo_model');
+        $where = array('email' => $email , 'matkhau' => $matkhau);
 		//check_exists kiem tra dieu kien co ton tai hay khong true co du lieu
-        if($this->admin_model->check_exists($where))
+        if($this->canbo_model->check_exists($where))
         {
             return true;
         }
